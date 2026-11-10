@@ -3,6 +3,9 @@ name = "frappe"
 authors = [
     { name = "Frappe Technologies Pvt Ltd", email = "developers@frappe.io"}
 ]
+maintainers = [
+    { name = "PayPilotLabs", email = "founder@paypilotlabs.com"}
+]
 description = "Metadata driven, full-stack low code web framework"
 requires-python = ">=3.14,<3.15"
 readme = "README.md"
@@ -109,10 +112,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://frappe.io/framework"
-Repository = "https://github.com/frappe/frappe.git"
+Homepage = "https://paypilotlabs.com"
+Repository = "https://github.com/paypilotlabs/paypilotlabs-framework.git"
 Documentation = "https://docs.frappe.io/framework"
-"Bug Reports" = "https://github.com/frappe/frappe/issues"
+"Bug Reports" = "https://github.com/paypilotlabs/paypilotlabs-framework/issues"
 
 [project.optional-dependencies]
 dev = [

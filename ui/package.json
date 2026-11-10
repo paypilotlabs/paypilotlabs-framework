@@ -82,7 +82,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frappe/frappe.git"
+    "url": "git+https://github.com/paypilotlabs/paypilotlabs-framework.git"
   },
   "author": "Frappe Technologies Pvt. Ltd.",
   "license": "MIT",
