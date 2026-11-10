@@ -119,27 +119,18 @@ frappe.ui.Sidebar = class Sidebar {
 
 		// if CRM is installed on the site, link to the route configured via add_to_apps_screen
 		const installed_app = (frappe.boot.apps_data.apps || []).find((app) => app.name === "crm");
-		if (installed_app && installed_app.route) {
-			const title = __("Switch to CRM");
-			const message = __("Open Frappe CRM");
-			this.promotional_banners.push({
-				title,
-				message,
-				link: installed_app.route,
-				icon,
-				is_internal: true,
-			});
-			return;
-		}
+		// PayPilotLabs: only link to the installed app; no external promotion
+		if (!installed_app?.route) return;
 
-		const title = __("Switch to Frappe CRM");
-		const message = __(
-			"Sales without complexity, lock-in and per-user costs. Try it for free!"
-		);
-		const link =
-			"https://frappe.io/crm?utm_source=crm-sidebar&utm_medium=sidebar&utm_campaign=frappe-ad";
-
-		this.promotional_banners.push({ title, message, link, icon });
+		const title = __("Switch to CRM");
+		const message = __("Open CRM");
+		this.promotional_banners.push({
+			title,
+			message,
+			link: installed_app.route,
+			icon,
+			is_internal: true,
+		});
 	}
 
 	get_helpdesk_banner(module) {
@@ -156,27 +147,18 @@ frappe.ui.Sidebar = class Sidebar {
 		const installed_app = (frappe.boot.apps_data.apps || []).find(
 			(app) => app.name === "helpdesk"
 		);
-		if (installed_app && installed_app.route) {
-			const title = __("Switch to Helpdesk");
-			const message = __("Open Frappe Helpdesk");
-			this.promotional_banners.push({
-				title,
-				message,
-				link: installed_app.route,
-				icon,
-				is_internal: true,
-			});
-			return;
-		}
+		// PayPilotLabs: only link to the installed app; no external promotion
+		if (!installed_app?.route) return;
 
 		const title = __("Switch to Helpdesk");
-		const message = __(
-			"Support without complexity, lock-in and per-user costs. Try it for free!"
-		);
-		const link =
-			"https://frappe.io/helpdesk?utm_source=support-sidebar&utm_medium=sidebar&utm_campaign=frappe-ad";
-
-		this.promotional_banners.push({ title, message, link, icon });
+		const message = __("Open Helpdesk");
+		this.promotional_banners.push({
+			title,
+			message,
+			link: installed_app.route,
+			icon,
+			is_internal: true,
+		});
 	}
 
 	render_promotional_banners() {

@@ -22,7 +22,7 @@ frappe.ui.misc.about = function () {
 						data-icon-button="true" title="${__("Website")}" aria-label="${__("Website")}">
 						${frappe.utils.icon("globe", "sm", "", "", "", true)}
 					</a>
-					<a href="https://github.com/frappe" target="_blank" class="es-button" data-variant="ghost"
+					<a href="https://github.com/paypilotlabs/paypilotlabs-framework" target="_blank" class="es-button" data-variant="ghost"
 						data-icon-button="true" title="${__("Source Code")}" aria-label="${__("Source Code")}">
 						${frappe.utils.icon("github", "sm", "", "", "", true)}
 					</a>
@@ -37,7 +37,7 @@ frappe.ui.misc.about = function () {
 				<div class="about-info-row flex items-center justify-between">
 					<div class="about-info-content flex flex-col gap-1">
 						<div class="about-info-title inline-flex items-center gap-1 text-base-semibold text-ink-gray-8">${__(
-							"Frappe Framework Version"
+							"Framework Version"
 						)}</div>
 						<div class="about-info-sub text-p-sm text-ink-gray-5" id="about-framework-version">
 							${__("Loading...")}

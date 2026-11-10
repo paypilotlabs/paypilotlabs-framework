@@ -21,10 +21,10 @@
 					</div>
 					<div class="email-divider"></div>
 					<div class="email-footer">
-						<a href="{{ site_url or 'https://frappe.io' }}">
+						<a href="{{ site_url or 'https://paypilotlabs.com' }}">
 							{% if brand_logo %}
 							<img class="email-brand-logo" src="{{ brand_logo }}" alt="{{ brand_name or 'PayPilotLabs' }}" />
-							{% elif brand_name and brand_name != "Frappe" %}
+							{% elif brand_name and brand_name != "PayPilotLabs" %}
 							<span class="email-brand-name">{{ brand_name }}</span>
 							{% else %}
 							<img class="email-brand-logo" src="/assets/frappe/images/paypilotlabs/logo-black.png" alt="PayPilotLabs" />

@@ -1,5 +1,5 @@
 {
-  "name": "frappe-framework",
+  "name": "paypilotlabs-framework",
   "scripts": {
     "build": "node esbuild",
     "production": "node esbuild --production",
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frappe/frappe.git"
+    "url": "git+https://github.com/paypilotlabs/paypilotlabs-framework.git"
   },
   "author": "Frappe Technologies Pvt. Ltd.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frappe/frappe/issues"
+    "url": "https://github.com/paypilotlabs/paypilotlabs-framework/issues"
   },
   "engines": {
     "node": ">=24"
   },
-  "homepage": "https://frappeframework.com",
+  "homepage": "https://paypilotlabs.com",
   "dependencies": {
     "@atlaskit/pragmatic-drag-and-drop": "^2.0.1",
     "@editorjs/editorjs": "^2.28.2",
