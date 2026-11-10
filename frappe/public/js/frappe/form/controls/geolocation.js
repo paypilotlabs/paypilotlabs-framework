@@ -179,10 +179,6 @@ frappe.ui.form.ControlGeolocation = class ControlGeolocation extends frappe.ui.f
 			frappe.utils.map_defaults.tiles.labels_tail.url,
 			frappe.utils.map_defaults.tiles.labels_tail.options
 		);
-		this.terrainLayer = L.tileLayer(
-			frappe.utils.map_defaults.tiles.terrain_lines_tail.url,
-			frappe.utils.map_defaults.tiles.terrain_lines_tail.options
-		);
 
 		this.streetLayer.addTo(this.map);
 
@@ -199,7 +195,6 @@ frappe.ui.form.ControlGeolocation = class ControlGeolocation extends frappe.ui.f
 		};
 		const overlays = {
 			Labels: this.labelsLayer,
-			Terrain: this.terrainLayer,
 		};
 
 		L.control.layers(baseLayers, overlays).addTo(this.map);
@@ -298,8 +293,7 @@ frappe.ui.form.ControlGeolocation = class ControlGeolocation extends frappe.ui.f
 				Object.values(this.map._layers).forEach((layer) => {
 					if (
 						layer instanceof L.TileLayer &&
-						(layer._url === frappe.utils.map_defaults.tiles.labels_tail.url ||
-							layer._url === frappe.utils.map_defaults.tiles.terrain_lines_tail.url)
+						layer._url === frappe.utils.map_defaults.tiles.labels_tail.url
 					) {
 						this.map.removeLayer(layer);
 					}

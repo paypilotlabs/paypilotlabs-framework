@@ -1330,17 +1330,10 @@ Object.assign(frappe.utils, {
 				},
 			},
 			labels_tail: {
-				url: "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
+				url: "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png",
 				options: {
 					attribution:
-						'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="https://www.hotosm.org/" target="_blank">HOT</a>, <a href="https://opentopomap.org/" target="_blank">OpenTopoMap</a> (CC-BY-SA)',
-				},
-			},
-			terrain_lines_tail: {
-				url: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
-				options: {
-					attribution:
-						'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="https://www.hotosm.org/" target="_blank">HOT</a>, <a href="https://opentopomap.org/" target="_blank">OpenTopoMap</a> (CC-BY-SA)',
+						'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
 				},
 			},
 		},

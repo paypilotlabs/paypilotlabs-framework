@@ -309,27 +309,17 @@ async function initMap() {
 		"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
 		{ attribution: "© Esri © OpenStreetMap Contributors" }
 	);
-	const labelsLayer = L.tileLayer(
-		"https://tiles.stadiamaps.com/tiles/stamen_toner_labels/{z}/{x}/{y}{r}.png",
-		{
-			attribution:
-				'© <a href="https://www.stadiamaps.com/">Stadia Maps</a> © <a href="https://www.stamen.com/">Stamen Design</a>',
-		}
-	);
-	const terrainLayer = L.tileLayer(
-		"https://tiles.stadiamaps.com/tiles/stamen_terrain_lines/{z}/{x}/{y}{r}.png",
-		{
-			attribution:
-				'© <a href="https://www.stadiamaps.com/">Stadia Maps</a> © <a href="https://www.stamen.com/">Stamen Design</a>',
-		}
-	);
+	const labelsLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png", {
+		attribution:
+			'© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
+	});
 
 	streetLayer.addTo(mapInstance);
 
 	L.control
 		.layers(
 			{ Default: streetLayer, Satellite: satelliteLayer },
-			{ Labels: labelsLayer, Terrain: terrainLayer }
+			{ Labels: labelsLayer }
 		)
 		.addTo(mapInstance);
 
