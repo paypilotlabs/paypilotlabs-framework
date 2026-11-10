@@ -12,13 +12,13 @@ frappe.ui.misc.about = function () {
 		`<div class="about-body flex flex-col gap-5 items-start">
 			<div class="about-frappe-section flex flex-col items-center gap-3 py-3 w-full">
 				<div class="about-frappe-header flex flex-col justify-center items-center gap-1.5">
-					<img src="/assets/frappe/images/frappe-comp-logo.svg" alt="Frappe" class="about-frappe-wordmark">
+					<img src="/assets/frappe/images/paypilotlabs/logo-black.svg" alt="PayPilotLabs" class="about-frappe-wordmark">
 					<p class="about-tagline text-p-sm text-ink-gray-5 m-0">${__(
-						"Open Source applications for the web."
+						"Built by PayPilotLabs on open-source Frappe."
 					)}</p>
 				</div>
 				<div class="about-social-btns flex gap-1">
-					<a href="https://frappe.io/" target="_blank" class="es-button" data-variant="ghost"
+					<a href="https://paypilotlabs.com/" target="_blank" class="es-button" data-variant="ghost"
 						data-icon-button="true" title="${__("Website")}" aria-label="${__("Website")}">
 						${frappe.utils.icon("globe", "sm", "", "", "", true)}
 					</a>
@@ -26,8 +26,8 @@ frappe.ui.misc.about = function () {
 						data-icon-button="true" title="${__("Source Code")}" aria-label="${__("Source Code")}">
 						${frappe.utils.icon("github", "sm", "", "", "", true)}
 					</a>
-					<a href="https://discuss.frappe.io" target="_blank" class="es-button" data-variant="ghost"
-						data-icon-button="true" title="${__("Forum")}" aria-label="${__("Forum")}">
+					<a href="https://paypilotlabs.com/roadmap/" target="_blank" class="es-button" data-variant="ghost"
+						data-icon-button="true" title="${__("Support")}" aria-label="${__("Support")}">
 						${frappe.utils.icon("message-circle", "sm", "", "", "", true)}
 					</a>
 				</div>
