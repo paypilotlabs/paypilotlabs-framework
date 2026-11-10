@@ -118,7 +118,7 @@ Documentation = "https://docs.frappe.io/framework"
 dev = [
     "pyngrok~=7.5.0",
     "watchdog~=6.0.0",
-    "responses==0.23.1",
+    "responses==0.26.3",
     # typechecking
     "basedmypy",
     "types-PyMySQL",
