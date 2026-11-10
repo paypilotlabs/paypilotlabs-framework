@@ -1330,17 +1330,17 @@ Object.assign(frappe.utils, {
 				},
 			},
 			labels_tail: {
-				url: "https://tiles.stadiamaps.com/tiles/stamen_toner_labels/{z}/{x}/{y}{r}.png",
+				url: "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png",
 				options: {
 					attribution:
-						'&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a>',
+						'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="https://www.hotosm.org/" target="_blank">HOT</a>, <a href="https://opentopomap.org/" target="_blank">OpenTopoMap</a> (CC-BY-SA)',
 				},
 			},
 			terrain_lines_tail: {
-				url: "https://tiles.stadiamaps.com/tiles/stamen_terrain_lines/{z}/{x}/{y}{r}.png",
+				url: "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png",
 				options: {
 					attribution:
-						'&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a>',
+						'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="https://www.hotosm.org/" target="_blank">HOT</a>, <a href="https://opentopomap.org/" target="_blank">OpenTopoMap</a> (CC-BY-SA)',
 				},
 			},
 		},
