@@ -11,6 +11,7 @@ from urllib.parse import urlencode
 import frappe
 import frappe.sessions
 from frappe import _
+from frappe.brand import BRAND
 from frappe.utils.jinja_globals import is_rtl
 
 SCRIPT_TAG_PATTERN = re.compile(r"\<script[^<]*\</script\>")
@@ -88,7 +89,9 @@ def get_context(context):
 			"google_analytics_id": frappe.conf.get("google_analytics_id"),
 			"google_analytics_anonymize_ip": frappe.conf.get("google_analytics_anonymize_ip"),
 			"app_name": (
-				frappe.get_website_settings("app_name") or frappe.get_system_settings("app_name") or "Frappe"
+				frappe.get_website_settings("app_name")
+				or frappe.get_system_settings("app_name")
+				or BRAND["product_name"]
 			),
 		}
 	)
