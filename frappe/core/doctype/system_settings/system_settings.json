@@ -492,7 +492,7 @@
    "fieldtype": "Section Break"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "disable_system_update_notification",
    "fieldtype": "Check",
    "label": "Disable System Update Notification"
@@ -576,7 +576,7 @@
    "label": "Telemetry"
   },
   {
-   "default": "1",
+   "default": "0",
    "fieldname": "enable_telemetry",
    "fieldtype": "Check",
    "label": "Allow Sending Usage Data for Improving Applications"
@@ -808,7 +808,7 @@
   },
   {
    "default": "0",
-   "description": "Adds a clear (\u00d7) button to Link fields, allowing users to quickly remove the selected value.",
+   "description": "Adds a clear (×) button to Link fields, allowing users to quickly remove the selected value.",
    "fieldname": "allow_clearing_link_fields",
    "fieldtype": "Check",
    "label": "Allow Clearing Link Fields"
