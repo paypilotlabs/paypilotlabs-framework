@@ -32,7 +32,7 @@ import type { SignupBannerProps } from "./types";
 
 const props = withDefaults(defineProps<SignupBannerProps>(), {
 	isSidebarCollapsed: false,
-	appName: "Frappe CRM",
+	appName: "PayPilotLabs",
 	redirectURL: "https://frappecloud.com/crm/signup",
 	afterSignup: () => {},
 });

@@ -63,7 +63,7 @@ import type { HelpArticle, HelpModalProps } from "./types";
 
 const props = withDefaults(defineProps<HelpModalProps>(), {
 	appName: "frappecrm",
-	title: "Frappe CRM",
+	title: "PayPilotLabs",
 	docsLink: "https://docs.frappe.io/crm",
 });
 
