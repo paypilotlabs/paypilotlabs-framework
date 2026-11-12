@@ -14,7 +14,7 @@ frappe.ui.misc.about = function () {
 				<div class="about-frappe-header flex flex-col justify-center items-center gap-1.5">
 					<img src="/assets/frappe/images/paypilotlabs/logo-black.svg" alt="PayPilotLabs" class="about-frappe-wordmark">
 					<p class="about-tagline text-p-sm text-ink-gray-5 m-0">${__(
-						"Built by PayPilotLabs on open-source Frappe."
+						"Built by PayPilotLabs."
 					)}</p>
 				</div>
 				<div class="about-social-btns flex gap-1">
@@ -48,12 +48,12 @@ frappe.ui.misc.about = function () {
 					frappe.boot.is_fc_site
 						? `<div class="about-info-row flex items-center justify-between">
 					<div class="about-info-content flex flex-col gap-1">
-						<a href="https://frappecloud.com/support" target="_blank" class="about-info-title inline-flex items-center gap-1 about-info-title-link text-base-semibold text-ink-gray-8 no-underline">
-							${__("Frappe Support")}
+						<a href="https://paypilotlabs.com/roadmap/" target="_blank" class="about-info-title inline-flex items-center gap-1 about-info-title-link text-base-semibold text-ink-gray-8 no-underline">
+							${__("Support")}
 							${frappe.utils.icon("external-link", "xs")}
 						</a>
 						<div class="about-info-sub text-p-sm text-ink-gray-5">
-							${__("Visit Frappe Support Portal")}
+							${__("Visit Support Portal")}
 						</div>
 					</div>
 				</div>`
@@ -79,7 +79,7 @@ frappe.ui.misc.about = function () {
 		.removeClass("hide")
 		.prepend(
 			`<div class="about-footer text-p-sm text-ink-gray-4 text-center">
-			${__("&copy; Frappe Technologies Pvt. Ltd. and contributors")}
+			${__("&copy; PayPilotLabs")}
 		</div>`
 		);
 

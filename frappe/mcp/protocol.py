@@ -46,7 +46,7 @@ def default_server_name() -> str:
 
 def server_instructions() -> str:
 	lines = [
-		"This is a Frappe Framework site at {0}.".format(get_host_name()),
+		"This is a PayPilotLabs site at {0}.".format(get_host_name()),
 		"You are connected as {0} ({1}).".format(get_fullname(), frappe.session.user),
 		"Tool arguments take the same values as the matching Frappe REST API v2 endpoints.",
 		"For example, filters, fields and order_by work as in GET /api/v2/document/<doctype>.",
