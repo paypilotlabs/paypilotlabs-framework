@@ -287,9 +287,9 @@ class DesktopPage {
 			},
 			{
 				icon: "life-buoy",
-				label: "Frappe Support",
+				label: "Support",
 				onclick: function () {
-					window.open("https://support.frappe.io/help", "_blank");
+					window.open("https://paypilotlabs.com/roadmap/", "_blank");
 				},
 				order: 40,
 			},

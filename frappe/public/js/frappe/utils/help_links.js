@@ -3,90 +3,90 @@ frappe.provide("frappe.help.help_links");
 frappe.help.help_links["data-import-tool"] = [
 	{
 		label: "Importing and Exporting Data",
-		url: "https://docs.erpnext.com/docs/user/manual/en/data",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["modules/Setup"] = [
 	{
 		label: "Users and Permissions",
-		url: "https://frappeframework.com/docs/user/en/basics/users-and-permissions",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 	{
 		label: "System Settings",
-		url: "https://docs.erpnext.com/docs/user/manual/en/system-settings",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 	{
 		label: "Data Management",
-		url: "https://docs.erpnext.com/docs/user/manual/en/data",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
-	{ label: "Email", url: "https://docs.erpnext.com/docs/user/manual/en/email" },
-	{ label: "Printing and Branding", url: "https://docs.erpnext.com/docs/user/manual/en/print" },
+	{ label: "Email", url: "https://paypilotlabs.com/roadmap/" },
+	{ label: "Printing and Branding", url: "https://paypilotlabs.com/roadmap/" },
 ];
 
 frappe.help.help_links["List/User"] = [
 	{
 		label: "Adding Users",
-		url: "https://docs.erpnext.com/docs/user/manual/en/adding-users",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 	{
 		label: "Rename User",
-		url: "https://docs.erpnext.com/docs/user/manual/en/renaming-documents",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["permission-manager"] = [
 	{
 		label: "Role Permissions Manager",
-		url: "https://frappeframework.com/docs/user/en/basics/users-and-permissions#role-permissions-manager",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["user-permissions"] = [
 	{
 		label: "User Permissions",
-		url: "https://frappeframework.com/docs/user/en/basics/users-and-permissions#user-permissions",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["Form/System Settings"] = [
 	{
 		label: "System Settings",
-		url: "https://docs.erpnext.com/docs/user/manual/en/system-settings",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["List/Email Account"] = [
 	{
 		label: "Email Account",
-		url: "https://docs.erpnext.com/docs/user/manual/en/email-account",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["List/Notification"] = [
 	{
 		label: "Notification",
-		url: "https://docs.erpnext.com/docs/user/manual/en/notifications",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["Form/Print Settings"] = [
 	{
 		label: "Print Settings",
-		url: "https://docs.erpnext.com/docs/user/manual/en/print-settings",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["print-format-builder"] = [
 	{
 		label: "Print Format Builder",
-		url: "https://docs.erpnext.com/docs/user/manual/en/print-format-builder",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];
 
 frappe.help.help_links["print-format-builder-beta"] = [
 	{
 		label: "Print Format Editor",
-		url: "https://docs.frappe.io/framework/user/en/printing/print-format-editor",
+		url: "https://paypilotlabs.com/roadmap/",
 	},
 ];

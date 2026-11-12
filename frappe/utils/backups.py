@@ -424,7 +424,7 @@ class BackupGenerator:
 				print("".join(backup_info), "\n")
 			database_header_content.extend(
 				[
-					f"Partial Backup of Frappe Site {frappe.local.site}",
+					f"Partial Backup of Site {frappe.local.site}",
 					("Backup contains: " if self.backup_includes else "Backup excludes: ") + backup_info[1],
 					"",
 				]
