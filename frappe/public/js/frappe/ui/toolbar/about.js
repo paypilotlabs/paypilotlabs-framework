@@ -79,7 +79,7 @@ frappe.ui.misc.about = function () {
 		.removeClass("hide")
 		.prepend(
 			`<div class="about-footer text-p-sm text-ink-gray-4 text-center">
-			${__("&copy; PayPilotLabs")}
+			${__("Open-source software. See the licence for credits.")}
 		</div>`
 		);
 
