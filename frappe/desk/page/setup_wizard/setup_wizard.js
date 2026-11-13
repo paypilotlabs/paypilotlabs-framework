@@ -565,7 +565,7 @@ frappe.setup.slides_settings = [
 				fieldname: "enable_telemetry",
 				label: __("Share usage data to help us improve"),
 				fieldtype: "Check",
-				default: cint(frappe.telemetry.can_enable()),
+				default: 0, // off until the admin opts in
 				depends_on: "eval:frappe.telemetry.can_enable()",
 			},
 		],
