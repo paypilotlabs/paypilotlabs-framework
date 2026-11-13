@@ -23,7 +23,7 @@ The base that every PayPilotLabs product runs on: it holds your data, logins, sc
 
 ## How it fits with other PayPilotLabs products
 
-This is the foundation. PayPilotLabs Helpdesk, CRM, ERP, HRMS, Insights and Builder all run on top of it, together with companion apps such as paypilotlabs-telephony (phone calls) and paypilotlabs-payments (payment gateways). You do not install it alone: each product's `docker/build.sh` builds one image with this framework and that product inside.
+This is the foundation. PayPilotLabs Helpdesk, CRM, ERP, HRMS and Insights all run on top of it, together with companion apps such as paypilotlabs-telephony (phone calls) and paypilotlabs-payments (payment gateways). You do not install it alone: each product's `docker/build.sh` builds one image with this framework and that product inside.
 
 ## Run it
 
